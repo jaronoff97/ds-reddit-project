@@ -1,5 +1,15 @@
 var express = require('express');
 var app = express();
+// Imports the Google Cloud client library
+const BigQuery = require('@google-cloud/bigquery');
+
+// Your Google Cloud Platform project ID
+const projectId = 'redditcollaborativefiltering';
+
+// Instantiates a client
+const bigquery = BigQuery({
+  projectId: projectId
+});
 
 app.set('port', (process.env.PORT || 5000));
 
