@@ -10,6 +10,16 @@ const projectId = 'redditcollaborativefiltering';
 const bigquery = BigQuery({
   projectId: projectId
 });
+var query = 'SELECT * FROM [fh-bigquery:reddit_comments.2017_02] where author="ThatGuyWhoSucksAtLOL" LIMIT 10';
+
+bigquery.createQueryStream(query)
+  .on('error', console.error)
+  .on('data', function(row) {
+    console.log(row);
+  })
+  .on('end', function() {
+    // All rows retrieved.
+  });
 
 app.set('port', (process.env.PORT || 5000));
 

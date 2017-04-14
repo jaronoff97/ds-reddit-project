@@ -1,5 +1,5 @@
 {
-  "name": "node-js-getting-started",
+  "name": "ds-reddit-backend",
   "version": "0.2.6",
   "description": "A sample Node.js app using Express 4",
   "engines": {
