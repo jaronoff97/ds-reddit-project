@@ -3,6 +3,7 @@ var app = express();
 var redis = require('redis');
 const nconf = require('nconf');
 nconf.argv().env().file('keys.json');
+console.log(nconf.get("HOME"))
 const client = redis.createClient(
   nconf.get('redisPort') || '6379',
   nconf.get('redisHost') || '127.0.0.1',
