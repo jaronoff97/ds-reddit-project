@@ -53,3 +53,5 @@ jspm_packages
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+keys.json
