@@ -15,8 +15,8 @@
 runtime: nodejs
 env: flex
 env_variables:
-    redisHost: "10.142.0.4",
-    redisPort: 6379,
-    redisKey: "WefsWeL4"
+    redisHost: 10.142.0.4
+    redisPort: 6379
+    redisKey: WefsWeL4
 # [END runtime]
 
